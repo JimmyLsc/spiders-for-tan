@@ -13,7 +13,7 @@ class IfengSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        title_list = response.xpath("//*[@id='root']/div[5]/div[1]/div/ul/li[1]/div/h2/a").extract()
+        title_list = response.xpath("//*[@id="root"]/div[5]/div[1]/div/ul/li[1]/div/h2/a").extract()
         print(title_list)
         pass
 
